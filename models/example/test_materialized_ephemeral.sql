@@ -3,4 +3,4 @@
 {{ config(materialized='table') }}
 
 select *
-from {{ ref('my_ephemeral') }}
+from {{ ref('materialized_ephemeral') }}
